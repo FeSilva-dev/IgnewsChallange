@@ -1,1 +1,52 @@
-// TODO
+.posts{
+  a{
+    display: block;
+
+    & + a{
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    strong{
+      display: block;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      line-height: 2rem;
+      transition: color 0.2s;
+    }
+
+    p{
+      margin-top: 0.5rem;
+      line-height: 1.625rem;
+      color: var(--gray-200);
+    }
+
+    &:hover strong{
+      color: var(--highlight);
+    }
+  }
+
+  .postInfo{
+    margin-top: 1rem;
+    display: flex;
+    color: var(--gray-300);
+    
+    time{
+      font-size: 1rem;
+      display: flex;
+    }
+
+    span{
+      margin-left: 1.5rem;
+    }
+  }
+  .loadMore{
+    margin-top: 4rem;
+
+    a {
+      color: var(--highlight);
+      font-weight: bold;
+    }
+  }
+
+}
