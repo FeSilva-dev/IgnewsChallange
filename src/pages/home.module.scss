@@ -15,7 +15,7 @@
       transition: color 0.2s;
     }
 
-    p{
+    & > p{
       margin-top: 0.5rem;
       line-height: 1.625rem;
       color: var(--gray-200);
@@ -32,20 +32,30 @@
     color: var(--gray-300);
     
     time{
+      display: block;
       font-size: 1rem;
-      display: flex;
+
+      span{
+        margin-right: 0.5rem;
+      }
     }
 
-    span{
+    p {
       margin-left: 1.5rem;
+
+      span{
+        margin-right: 0.5rem;
+      }
     }
   }
   .loadMore{
     margin-top: 4rem;
 
-    a {
+    button {
       color: var(--highlight);
       font-weight: bold;
+      background-color: transparent;
+      border: 0;
     }
   }
 

@@ -1,4 +1,5 @@
 import commonStyles from '../../styles/common.module.scss';
+import styles from './header.module.scss';
 import { useRouter } from 'next/router';
 
 export default function Header() {
@@ -7,7 +8,12 @@ export default function Header() {
   
   return(
     <header className={commonStyles.container}>
-      <img src="/logo.svg" alt="logo" onClick={() => router.push('/', '', {})} />
+      <img 
+        className={styles.headerImg}
+        src="/logo.svg" 
+        alt="logo" 
+        onClick={() => router.push('/', '', {})} 
+      />
     </header>
   )
 }
